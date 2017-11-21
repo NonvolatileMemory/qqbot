@@ -1,0 +1,3 @@
+create database qqbot;
+create user qqbot@localhost identified by 'QQqqbot-0123';
+grant all privileges on qqbot.* to qqbot@localhost identified by 'QQqqbot-0123';

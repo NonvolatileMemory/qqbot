@@ -18,16 +18,16 @@
 # 指定启动参数。详细请参见 qqbot 命令的帮助 （qqbot --help）。
 args = [
     # 用户名
-    '--user', 'username',
+    '--user', 'Tony',
     
     #  QQ 号码
-    '--qq', '12345678',
+    '--qq', '2910808198',
     
     # 插件目录
-    '--pluginPath', '/my/plugin/path',
+    '--pluginPath', '/home/tony/Documents/qqbot/qqbot/plugins',
     
     # 启动时自动加载的插件
-    '--plugins', 'plugin1,plugin2,plugin3',
+    '--plugins', 'chatlog',
     
     # 启动方式：慢启动（获取全部联系人之后再启动）
     '--startAfterFetch',
