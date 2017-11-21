@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `chat_logs`;
 CREATE TABLE `chat_logs` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `content` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `content` varchar(511) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `group_id` varchar(12) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `group_name` varchar(80) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `member_id` varchar(12) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
