@@ -91,6 +91,9 @@ def insertChatContent(bot, contact, member, content):
     name = pymysql.escape_string(contact.name)
     nickname = pymysql.escape_string(member.name)
     data = (contact.qq, name, member.qq, nickname, content)
-    cursor.execute(sql % data)
+    try:
+        cursor.execute(sql % data)
+    except Exception, e:
+        print(e)
     connect.commit()
     print('insert success', cursor.rowcount, ' record')
